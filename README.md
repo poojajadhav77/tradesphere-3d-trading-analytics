@@ -23,62 +23,7 @@ This beginner-friendly project analyses a trade journal to discover performance 
 
 ---
 
-## 1. Install the tools on Windows
-
-1. Install **Python 3.12** from the official Python website. During installation, tick **Add Python to PATH**. Python 3.11 should also work. (Using a commonly supported release avoids package compatibility issues.)
-2. Install **Visual Studio Code**.
-3. In VS Code, choose **File → Open Folder** and open the extracted `trading_performance_mining` project folder.
-4. Open **Terminal → New Terminal**. The terminal should start inside the project folder.
-
-Check Python:
-
-```powershell
-py --version
-```
-
-If `py` is not recognized, try `python --version`. If neither works, reinstall Python and tick “Add Python to PATH”.
-
-## 2. Create a virtual environment
-
-Run the following commands in the VS Code PowerShell terminal, from the project folder:
-
-```powershell
-py -3.12 -m venv .venv
-.\.venv\Scripts\Activate.ps1
-python -m pip install --upgrade pip
-pip install -r requirements.txt
-```
-
-If PowerShell blocks activation, run this in that terminal and then activate again:
-
-```powershell
-Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
-.\.venv\Scripts\Activate.ps1
-```
-
-You should see `(.venv)` at the start of the terminal line after activation. Keep using that terminal for this project.
-
-## 3. Generate or refresh the sample data
-
-The sample CSV is already included. You can regenerate it with:
-
-```powershell
-python generate_sample_data.py
-```
-
-That creates `data/sample_trades.csv`. It is synthetic sample data only.
-
-## 4. Run the dashboard
-
-From the project folder and with `.venv` activated, run:
-
-```powershell
-streamlit run app.py
-```
-
-Streamlit should print a local address, usually `http://localhost:8501`, and may open it in your browser automatically. If it does not open automatically, copy the **Local URL** from the terminal into Chrome.
-
-To stop the app, return to the terminal and press `Ctrl+C`.
+.
 
 ## 5. How the pieces connect
 
