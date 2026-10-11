@@ -1,0 +1,1 @@
+trade_id,entry_time,exit_time,instrument,strategy,direction,entry_price,stop_loss_price,take_profit_price,quantity,planned_risk_amount,session,market_condition,emotion_before,followed_plan,pnl

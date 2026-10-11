@@ -1,0 +1,22 @@
+SMART TRADING PERFORMANCE & BEHAVIOR MINING SYSTEM
+
+1) Install Python 3.12 and VS Code.
+2) Extract this ZIP.
+3) VS Code -> File -> Open Folder -> select trading_performance_mining.
+4) VS Code -> Terminal -> New Terminal.
+5) Run one line at a time:
+   py -3.12 -m venv .venv
+   .\.venv\Scripts\Activate.ps1
+   python -m pip install --upgrade pip
+   pip install -r requirements.txt
+   streamlit run app.py
+6) Open the Local URL printed in the terminal (usually http://localhost:8501).
+7) Start with the synthetic sample data. Upload your own CSV later from the app sidebar.
+
+If PowerShell blocks environment activation:
+   Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+   .\.venv\Scripts\Activate.ps1
+
+Read README.md for CSV column names, how the algorithms work, database design, troubleshooting, and the report outline in PROJECT_REPORT_TEMPLATE.md.
+
+NOTE: sample_trades.csv is synthetic demo data, not real trades or financial advice.
